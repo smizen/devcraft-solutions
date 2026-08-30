@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="brandOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="50%" stop-color="#E87A24" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Arc Accent -->
+  <path d="M 268 120 C 130 65 30 165 48 300 C 65 420 220 460 270 355" 
+        stroke="url(#brandOrangeGrad)" stroke-width="12" stroke-linecap="round" fill="none" />
+
+  <!-- DEVCRAFT Text with Custom Geometric Cuts -->
+  <g fill="url(#brandOrangeGrad)">
+    <!-- Custom stylized DEVCRAFT -->
+    <text x="250" y="185" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="70" 
+          letter-spacing="4">DEVCRAFT</text>
+
+    <!-- SOLUTIONS Text -->
+    <text x="250" y="250" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="64" 
+          letter-spacing="3">SOLUTIONS</text>
+
+    <!-- YOUR SOLUTION PARTNER Subtitle -->
+    <text x="250" y="285" 
+          text-anchor="middle" 
+          font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" 
+          font-weight="600" 
+          font-size="19" 
+          letter-spacing="3.5">YOUR SOLUTION PARTNER</text>
+  </g>
+</svg>
