@@ -208,7 +208,7 @@ function initContactForm() {
           // Fallback if form endpoint needs initial activation or custom mailto
           showFormStatus(statusDiv, 'success', `
             <strong>Merci ${escapeHtml(name)} !</strong><br>
-            Votre message a été enregistré avec succès. Vous pouvez également nous contacter directement sur <a href="mailto:contact@devcraft-solutions.com">contact@devcraft-solutions.com</a>.
+            Votre message a été enregistré avec succès. Vous pouvez également nous contacter directement sur <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.
           `);
           form.reset();
         }
@@ -251,6 +251,59 @@ function escapeHtml(str) {
 }
 
 /* --------------------------------------------------------------------------
+   LEGAL MODALS (MENTIONS LÉGALES & PRIVACY POLICY)
+   -------------------------------------------------------------------------- */
+function initLegalModals() {
+  const triggers = document.querySelectorAll('[data-modal]');
+  const closeButtons = document.querySelectorAll('.modal-close');
+  const backdrops = document.querySelectorAll('.modal-backdrop');
+
+  triggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modalId = btn.getAttribute('data-modal');
+      const targetModal = document.getElementById(modalId);
+      if (targetModal) {
+        targetModal.classList.add('active');
+        targetModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  const closeModal = (modal) => {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  closeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modal = btn.closest('.modal-backdrop');
+      if (modal) closeModal(modal);
+    });
+  });
+
+  backdrops.forEach(backdrop => {
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) {
+        closeModal(backdrop);
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      backdrops.forEach(backdrop => {
+        if (backdrop.classList.contains('active')) {
+          closeModal(backdrop);
+        }
+      });
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
    SCROLL TO TOP BUTTON
    -------------------------------------------------------------------------- */
 function initScrollTop() {
@@ -283,3 +336,8 @@ function updateCurrentYear() {
     yearElem.textContent = new Date().getFullYear();
   }
 }
+
+// Ensure initLegalModals is registered on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  initLegalModals();
+});

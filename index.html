@@ -671,7 +671,7 @@
                 </div>
                 <div>
                   <strong>Email Professionnel</strong>
-                  <p><a href="mailto:contact@devcraft-solutions.com" class="link-hover">contact@devcraft-solutions.com</a></p>
+                  <p><a href="mailto:contact@devcraft-solutions.org" class="link-hover">contact@devcraft-solutions.org</a></p>
                 </div>
               </div>
 
@@ -692,7 +692,7 @@
             <h3 class="form-title">Envoyez-nous un message</h3>
             <p class="form-subtitle">Réponse sous 24h &bull; Diagnostic initial offert</p>
 
-            <form id="contact-form" class="contact-form" action="https://formsubmit.co/contact@devcraft-solutions.com" method="POST">
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/contact@devcraft-solutions.org" method="POST">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_subject" value="Nouveau message depuis le site DevCraft Solutions">
               <input type="hidden" name="_template" value="table">
@@ -743,7 +743,10 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo.svg" alt="DevCraft Solutions - Your Solution Partner" class="footer-logo">
-        <p class="footer-tagline"><strong>DevCraft Solutions</strong> &bull; Your Solution Partner. Ingénierie logicielle : Java, Spring Boot, Angular, Kotlin, Flutter, iOS, Android & Bases de données.</p>
+        <p class="footer-tagline"><strong>DevCraft Solutions — EURL</strong> &bull; Your Solution Partner. Cabinet d'ingénierie logicielle & conseil : Java, Spring Boot, Angular, Kotlin, Flutter, iOS, Android & Bases de données.</p>
+        <p class="footer-contact-item">
+          <strong>Contact :</strong> <a href="mailto:contact@devcraft-solutions.org" class="link-hover">contact@devcraft-solutions.org</a>
+        </p>
       </div>
 
       <div class="footer-nav">
@@ -759,23 +762,89 @@
         </ul>
       </div>
 
-      <div class="footer-tech">
-        <h4>Technologies Clés</h4>
+      <div class="footer-legal-col">
+        <h4>Informations Légales</h4>
         <ul>
-          <li>Java & Spring Boot 3</li>
-          <li>Angular & TypeScript</li>
-          <li>Kotlin Android & Jetpack</li>
-          <li>Flutter & iOS</li>
-          <li>Bases de données & SQL</li>
+          <li><strong>Raison sociale :</strong> DevCraft Solutions — EURL</li>
+          <li><button type="button" class="legal-modal-trigger" data-modal="modal-legal">Mentions Légales</button></li>
+          <li><button type="button" class="legal-modal-trigger" data-modal="modal-privacy">Politique de Confidentialité</button></li>
+          <li><a href="https://devcraft-solutions.org">https://devcraft-solutions.org</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; <span id="current-year"></span> DevCraft Solutions. Tous droits réservés.</p>
-      <p class="footer-meta">DevCraft Solutions &bull; Your Solution Partner</p>
+      <p>&copy; <span id="current-year"></span> DevCraft Solutions — EURL. Tous droits réservés.</p>
+      <div class="footer-legal-links">
+        <button type="button" class="legal-link-btn" data-modal="modal-legal">Mentions Légales</button>
+        <span>&bull;</span>
+        <button type="button" class="legal-link-btn" data-modal="modal-privacy">Politique de Confidentialité</button>
+        <span>&bull;</span>
+        <a href="mailto:contact@devcraft-solutions.org" class="legal-link-btn">contact@devcraft-solutions.org</a>
+      </div>
     </div>
   </footer>
+
+  <!-- MODAL: MENTIONS LÉGALES -->
+  <div id="modal-legal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-legal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-legal-title">Mentions Légales</h3>
+        <button type="button" class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>1. Éditeur & Raison Sociale</h4>
+        <p><strong>DevCraft Solutions — EURL</strong><br>
+        Cabinet de conseil et d'ingénierie en systèmes informatiques, architectures logicielles et développement d'applications web et mobiles.<br>
+        <strong>Email officiel de contact :</strong> <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a><br>
+        <strong>Site Web officiel :</strong> <a href="https://devcraft-solutions.org">https://devcraft-solutions.org</a></p>
+
+        <h4>2. Hébergement du Site Web</h4>
+        <p>Le site est hébergé par la plateforme d'infrastructure <strong>GitHub Pages</strong> :<br>
+        <strong>GitHub, Inc.</strong><br>
+        88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.<br>
+        Site Web : <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">https://pages.github.com</a></p>
+
+        <h4>3. Propriété Intellectuelle</h4>
+        <p>L'ensemble des contenus, marques, logos, identités visuelles, code source et architectures présentés sur ce site sont la propriété exclusive de <strong>DevCraft Solutions — EURL</strong>, sauf mention expresse contraire. Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable.</p>
+
+        <h4>4. Contact</h4>
+        <p>Pour toute question ou demande relative aux mentions légales, veuillez écrire à : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: POLITIQUE DE CONFIDENTIALITÉ (RGPD / GOOGLE PLAY) -->
+  <div id="modal-privacy" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-privacy-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-privacy-title">Politique de Confidentialité</h3>
+        <button type="button" class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>1. Responsable du Traitement des Données</h4>
+        <p>Le responsable du traitement des données est <strong>DevCraft Solutions — EURL</strong>.<br>
+        Contact Délégué à la Protection des Données (DPO) : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a></p>
+
+        <h4>2. Collecte & Utilisation des Données du Site Web</h4>
+        <p>Sur notre site vitrine (https://devcraft-solutions.org), les seules informations personnelles collectées sont celles que vous transmettez volontairement via le formulaire de contact (Nom, Prénom, Adresse Email, Message). Ces données sont exclusivement utilisées pour répondre à votre demande commerciale ou technique et ne font l'objet d'aucune cession ou commercialisation à des tiers.</p>
+
+        <h4>3. Confidentialité des Applications Mobiles (CiviScore, Winou El Maa)</h4>
+        <p>Dans le cadre de nos applications éditées et publiées (notamment sur Google Play) :
+        <ul>
+          <li><strong>CiviScore (Examen Civique) :</strong> Aucune donnée personnelle nominative n'est transmise à des tiers. Les scores d'entraînement et la progression peuvent être stockés localement sur votre terminal.</li>
+          <li><strong>WaterMap (Winou El Maa) :</strong> Les données de géolocalisation ne sont utilisées qu'avec votre accord explicite pour l'affichage cartographique et le signalement collaboratif des ressources.</li>
+        </ul>
+        </p>
+
+        <h4>4. Vos Droits (Conformité RGPD)</h4>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous bénéficiez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données. Vous pouvez exercer ce droit à tout moment par simple email à : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.</p>
+
+        <h4>5. Cookies & Traceurs</h4>
+        <p>Ce site n'utilise aucun traceur publicitaire intrusif. Seuls des réglages d'ergonomie locaux (tels que la préférence du thème Clair/Sombre) sont conservés dans votre navigateur.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Scroll to Top Button -->
   <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Retour en haut" title="Remonter en haut de page">

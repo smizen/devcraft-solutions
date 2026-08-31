@@ -1315,7 +1315,7 @@ section {
 }
 
 /* ==========================================================================
-   FOOTER
+   FOOTER & LEGAL
    ========================================================================== */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
@@ -1325,7 +1325,7 @@ section {
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1.2fr;
   gap: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid var(--border-subtle);
@@ -1340,23 +1340,47 @@ section {
 .footer-tagline {
   font-size: 0.9rem;
   color: var(--text-secondary);
-  max-width: 320px;
+  max-width: 360px;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-.footer-nav h4, .footer-tech h4 {
+.footer-contact-item {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.footer-nav h4, .footer-legal-col h4 {
   font-size: 1rem;
   margin-bottom: 16px;
   color: var(--text-primary);
 }
 
-.footer-nav ul li, .footer-tech ul li {
-  margin-bottom: 8px;
+.footer-nav ul li, .footer-legal-col ul li {
+  margin-bottom: 10px;
   font-size: 0.88rem;
   color: var(--text-secondary);
 }
 
 .footer-nav ul li a:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-orange);
+}
+
+.legal-modal-trigger {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.legal-modal-trigger:hover {
+  color: var(--accent-orange);
 }
 
 .footer-bottom {
@@ -1366,10 +1390,144 @@ section {
   padding-top: 24px;
   font-size: 0.82rem;
   color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.heart {
-  color: #EF4444;
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legal-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.legal-link-btn:hover {
+  color: var(--accent-orange);
+}
+
+/* ==========================================================================
+   LEGAL MODAL DIALOGS (RGPD & MENTIONS LÉGALES)
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-dialog {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+  transform: scale(0.95);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.modal-backdrop.active .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.modal-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+  color: var(--accent-orange);
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.modal-body h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.modal-body h4:first-child {
+  margin-top: 0;
+}
+
+.modal-body ul {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.modal-body ul li {
+  margin-bottom: 6px;
+}
+
+.modal-body a {
+  color: var(--accent-orange);
+  text-decoration: underline;
 }
 
 /* ==========================================================================
