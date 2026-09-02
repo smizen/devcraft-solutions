@@ -1,68 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevCraft Solutions - Your Solution Partner. Cabinet d'ingénierie logicielle & conseil : Java, Spring Boot, Angular, Kotlin, Android, Flutter, iOS, Bases de données, Cloud & DevOps.">
-  <meta name="keywords" content="DevCraft Solutions, Java, Spring Boot, Angular, Kotlin, Android, Flutter, iOS, Base de données, PostgreSQL, ingénierie logicielle, conseil architecture, FinTech, HealthTech">
+  <meta name="description" content="DevCraft Solutions - Cabinet d'ingénierie logicielle & conseil en architecture. Nous concevons des logiciels web, mobiles et backend robustes pour les entreprises.">
+  <meta name="keywords" content="DevCraft Solutions, ingénierie logicielle, architecture logicielle, Java, Spring Boot, Angular, Flutter, Kotlin, Android, iOS, PostgreSQL">
   <meta name="author" content="DevCraft Solutions">
   
   <!-- Open Graph / Meta Réseaux Sociaux -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="DevCraft Solutions | Your Solution Partner">
-  <meta property="og:description" content="Ingénierie logicielle robuste & architectures d'entreprise : Java, Spring Boot, Angular, Kotlin, Flutter, iOS, Android, Bases de données & Cloud.">
+  <meta property="og:title" content="DevCraft Solutions | Ingénierie Logicielle & Architecture">
+  <meta property="og:description" content="Nous concevons des logiciels qui tiennent dans le temps. Architecture, développement et modernisation d'applications web, mobiles et backend.">
   <meta property="og:image" content="assets/logo.svg">
   
-  <title>DevCraft Solutions | Your Solution Partner</title>
+  <title>DevCraft Solutions | Ingénierie Logicielle & Architecture</title>
   
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Main Stylesheet (with cache-buster for instant GitHub Pages reload) -->
-  <link rel="stylesheet" href="styles.css?v=2.1">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=3.3">
 </head>
 <body>
 
-  <!-- Ambient Glowing Background Elements -->
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-  <div class="bg-glow bg-glow-3"></div>
-
-  <!-- Header & Navigation -->
+  <!-- Site Header (Sticky with blur) -->
   <header class="site-header" id="site-header">
-    <div class="container header-inner">
+    <div class="header-container">
       <a href="#hero" class="brand-logo" aria-label="Accueil DevCraft Solutions">
-        <img src="assets/logo.svg" alt="DevCraft Solutions Logo" class="logo-img">
+        <img src="assets/logo.svg" alt="DevCraft Solutions" class="logo-img">
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="#hero" class="nav-link active">Accueil</a></li>
-          <li><a href="#stack" class="nav-link">Expertise & Stack</a></li>
-          <li><a href="#solutions" class="nav-link">Réalisations</a></li>
-          <li><a href="#services" class="nav-link">Services & Conseil</a></li>
-          <li><a href="#expertise" class="nav-link">Secteurs Métier</a></li>
-          <li><a href="#faq" class="nav-link">Q&R / FAQ</a></li>
-          <li><a href="#contact" class="nav-link btn-nav-cta">Nous Contacter</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+          <li><a href="#approche" class="nav-link">Notre Approche</a></li>
+          <li><a href="#secteurs" class="nav-link">Secteurs</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link nav-link-cta">Nous contacter</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <!-- Theme Toggle Button (Light by default) -->
-        <button id="theme-toggle" class="theme-btn" aria-label="Changer le thème" title="Basculer Mode Clair / Sombre">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
-
-        <!-- Mobile Menu Hamburger -->
-        <button id="mobile-toggle" class="mobile-toggle" aria-label="Menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="#contact" class="btn-header-cta">Nous contacter</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
       </div>
     </div>
@@ -71,662 +60,632 @@
   <main>
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge-pill hero-badge">
-            <span class="badge-dot"></span>
-            <span>DevCraft Solutions &bull; Your Solution Partner</span>
-          </div>
+      <div class="hero-container">
+        
+        <div class="hero-grid">
+          <!-- Hero Text -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Nous concevons des logiciels<br>
+              <span class="hero-title-accent">qui tiennent dans le temps.</span>
+            </h1>
 
-          <h1 class="hero-title">
-            Ingénierie logicielle robuste & architectures d'entreprise <span class="text-gradient">haut de gamme</span>.
-          </h1>
+            <p class="hero-subtitle">
+              Architecture, développement et modernisation d'applications web, mobiles et backend pour les entreprises.
+            </p>
 
-          <p class="hero-subtitle">
-            <strong>DevCraft Solutions</strong> est votre partenaire technologique d'excellence. De l'écosystème <strong>Java / Spring Boot</strong> et <strong>Angular</strong> jusqu'aux applications mobiles <strong>Kotlin Android & Flutter iOS</strong>, nous bâtissons des solutions scalables, sécurisées et éprouvées.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="#stack" class="btn btn-primary">
-              <span>Explorer nos expertises</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Discuter d'un projet</span>
-            </a>
-          </div>
-
-          <!-- Quick Metrics -->
-          <div class="hero-metrics">
-            <div class="metric-item">
-              <div class="metric-value">Java & Spring</div>
-              <div class="metric-label">Backend d'Entreprise & Microservices</div>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <div class="metric-value">Android & iOS</div>
-              <div class="metric-label">Kotlin Natif & Flutter Cross-Platform</div>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <div class="metric-value">Angular & Web</div>
-              <div class="metric-label">Bases de Données & Cloud Scalable</div>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Parler de votre projet</a>
+              <a href="#expertise" class="btn btn-secondary">
+                <span>Découvrir notre expertise</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
-        </div>
 
-        <!-- Hero Visual / Dynamic Card -->
-        <div class="hero-visual">
-          <div class="glass-terminal">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
+          <!-- Hero Code Visual (Minimalist & Clean) -->
+          <div class="hero-visual">
+            <div class="code-card">
+              <div class="code-card-header">
+                <div class="window-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="code-file-name">DevCraft.java</span>
               </div>
-              <div class="terminal-title">DevCraftExpertise.java</div>
-              <div class="terminal-badge">READY</div>
-            </div>
-            <div class="terminal-body">
-              <pre><code><span class="t-keyword">@Service</span>
-<span class="t-keyword">public class</span> <span class="t-def">DevCraftSolutions</span> {
+              <div class="code-card-body">
+                <pre><code><span class="code-keyword">@Service</span>
+<span class="code-keyword">public class</span> <span class="code-class">DevCraft</span> {
 
-  <span class="t-comment">// Stack & Core Technical Domains</span>
-  <span class="t-keyword">private final</span> List&lt;String&gt; backend = 
-      List.of(<span class="t-str">"Java 21+"</span>, <span class="t-str">"Spring Boot 3"</span>, <span class="t-str">"Microservices"</span>);
-  <span class="t-keyword">private final</span> List&lt;String&gt; frontend = 
-      List.of(<span class="t-str">"Angular"</span>, <span class="t-str">"TypeScript"</span>, <span class="t-str">"RxJS"</span>);
-  <span class="t-keyword">private final</span> List&lt;String&gt; mobile = 
-      List.of(<span class="t-str">"Kotlin Android"</span>, <span class="t-str">"Flutter"</span>, <span class="t-str">"iOS"</span>);
-  <span class="t-keyword">private final</span> List&lt;String&gt; databases = 
-      List.of(<span class="t-str">"PostgreSQL"</span>, <span class="t-str">"Oracle"</span>, <span class="t-str">"MySQL"</span>, <span class="t-str">"Redis"</span>);
+    Backend <span class="code-method">java</span>();
+    Web <span class="code-method">angular</span>();
+    Mobile <span class="code-method">flutter</span>();
 
-  <span class="t-keyword">public</span> PartnerShip <span class="t-func">deliverExcellence</span>() {
-    <span class="t-keyword">return new</span> <span class="t-def">YourSolutionPartner</span>();
-  }
+    Solution <span class="code-method">buildForScale</span>();
 }</code></pre>
-            </div>
-            <div class="terminal-footer">
-              <span class="status-indicator"></span>
-              <span>Spring Boot Context Loaded &bull; High Availability Active</span>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Scroll Teaser Indicator -->
+        <a href="#expertise" class="hero-scroll-teaser" aria-label="Découvrir l'expertise DevCraft Solutions">
+          <div class="teaser-label">Notre expertise</div>
+          <div class="teaser-domains">Architecture — Backend — Web — Mobile — Cloud</div>
+          <div class="teaser-action">
+            <span>Découvrir</span>
+            <svg class="teaser-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </div>
+        </a>
+
       </div>
     </section>
 
-    <!-- SECTION DOMAINES D'EXPERTISE & STACK TECHNOLOGIQUE -->
-    <section class="section-stack" id="stack">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-pill">Savoir-Faire & Technologies</div>
-          <h2 class="section-title">Nos <span class="text-gradient">Domaines d'Expertise</span></h2>
-          <p class="section-subtitle">
-            Une maîtrise complète des écosystèmes d'ingénierie les plus exigeants, du backend transactionnel aux interfaces web et mobiles.
-          </p>
-        </div>
-
-        <div class="stack-categories">
-          
-          <!-- Backend & Enterprise -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-              <span>Backend & Systèmes d'Entreprise</span>
-            </h3>
-            <p class="cat-desc">Architectures modulaires, microservices sécurisés et traitements transactionnels haute performance.</p>
-            <div class="pill-group">
-              <span class="pill pill-primary">Java (17 / 21+)</span>
-              <span class="pill pill-primary">Spring Boot 3</span>
-              <span class="pill">Spring Security & JWT</span>
-              <span class="pill">Spring Data JPA / Hibernate</span>
-              <span class="pill">Microservices & REST APIs</span>
-              <span class="pill">Kafka / RabbitMQ</span>
-              <span class="pill">Clean Architecture & DDD</span>
-            </div>
-          </div>
-
-          <!-- Mobile Development -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-              <span>Ingénierie Mobile (Android & iOS)</span>
-            </h3>
-            <p class="cat-desc">Applications mobiles natives et cross-platform réactives, fluides et optimisées pour les stores.</p>
-            <div class="pill-group">
-              <span class="pill pill-primary">Kotlin & Android SDK</span>
-              <span class="pill pill-primary">Jetpack Compose</span>
-              <span class="pill pill-primary">Flutter & Dart</span>
-              <span class="pill">iOS (Swift / Cross-Platform)</span>
-              <span class="pill">Coroutines & StateFlow</span>
-              <span class="pill">Architecture MVVM / MVI</span>
-              <span class="pill">Offline-First & SQLite/Room</span>
-            </div>
-          </div>
-
-          <!-- Frontend & Web -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              <span>Frontend & Applications Web</span>
-            </h3>
-            <p class="cat-desc">Portails d'entreprise, Single Page Applications (SPA) et interfaces riches à forte valeur ajoutée.</p>
-            <div class="pill-group">
-              <span class="pill pill-primary">Angular</span>
-              <span class="pill pill-primary">TypeScript & RxJS</span>
-              <span class="pill">NgRx / State Management</span>
-              <span class="pill">React / Next.js</span>
-              <span class="pill">HTML5 Sémantique & CSS3/SCSS</span>
-              <span class="pill">Responsive Design & Web Vitals</span>
-              <span class="pill">Intégration d'APIs Sécurisées</span>
-            </div>
-          </div>
-
-          <!-- Bases de données & Data -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              <span>Bases de Données & Persistance</span>
-            </h3>
-            <p class="cat-desc">Modélisation relationnelle et NoSQL, optimisation de requêtes, indexation et intégrité des données.</p>
-            <div class="pill-group">
-              <span class="pill pill-primary">PostgreSQL / PostGIS</span>
-              <span class="pill pill-primary">Oracle Database</span>
-              <span class="pill">MySQL / MariaDB</span>
-              <span class="pill">MongoDB (NoSQL)</span>
-              <span class="pill">Redis (Cache & Sessions)</span>
-              <span class="pill">Optimisation SQL & Index</span>
-              <span class="pill">Migrations Liquibase / Flyway</span>
-            </div>
-          </div>
-
-          <!-- Cloud & DevOps -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              <span>Cloud, DevOps & Outillage</span>
-            </h3>
-            <p class="cat-desc">Automatisation des déploiements, conteneurisation et monitoring continu pour garantir la haute disponibilité.</p>
-            <div class="pill-group">
-              <span class="pill">Docker & Conteneurs</span>
-              <span class="pill">Kubernetes</span>
-              <span class="pill">CI/CD (GitHub Actions / GitLab)</span>
-              <span class="pill">Google Cloud Platform (GCP)</span>
-              <span class="pill">AWS</span>
-              <span class="pill">Git & Versioning</span>
-              <span class="pill">Maven / Gradle</span>
-            </div>
-          </div>
-
-          <!-- Cartographie & Géo-Services -->
-          <div class="stack-cat-card">
-            <h3 class="cat-title">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-              <span>Géo-Services & Données Spatiales</span>
-            </h3>
-            <p class="cat-desc">Intégration cartographique interactive haute précision, géofencing et calcul d'itinéraires.</p>
-            <div class="pill-group">
-              <span class="pill">Google Maps Platform</span>
-              <span class="pill">GeoJSON & Formats SIG</span>
-              <span class="pill">Calculs Spatiaux & Clustering</span>
-              <span class="pill">Synchronisation Temps Réel</span>
-              <span class="pill">WebSockets & Push Notifications</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION SOLUTIONS / REALISATIONS -->
-    <section class="section-solutions" id="solutions">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-pill">Portfolio & Réalisations</div>
-          <h2 class="section-title">Nos <span class="text-gradient">Réalisations</span> & Contributions</h2>
-          <p class="section-subtitle">
-            Quelques exemples d'applications déployées ainsi que nos contributions d'ingénierie et de conseil sur des projets stratégiques.
-          </p>
-
-          <!-- Filter Tabs -->
-          <div class="portfolio-filters" id="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">Toutes les réalisations</button>
-            <button class="filter-btn" data-filter="apps">Applications Déployées</button>
-            <button class="filter-btn" data-filter="enterprise">Grands Comptes & Conseil</button>
-          </div>
-        </div>
-
-        <div class="solutions-grid" id="solutions-grid">
-          
-          <!-- PROJECT 1 : EXAMEN CIVIQUE CIVISCORE -->
-          <div class="solution-card featured" data-category="apps">
-            <div class="card-badge-top">Application Mobile &bull; Éducation</div>
-            <div class="card-content">
-              <div class="card-icon-box civic-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                  <path d="M10 6h6"/>
-                  <path d="M10 10h6"/>
-                  <path d="M10 14h4"/>
-                </svg>
-              </div>
-              <h3 class="card-title">Examen Civique CiviScore</h3>
-              <p class="card-tagline">Application d'entraînement, préparation aux examens & évaluation</p>
-              <p class="card-desc">
-                Une application mobile complète pour structurer l'apprentissage et la préparation aux examens civiques à travers des tests interactifs, bilans de progression et calcul de scores personnalisés.
-              </p>
-              <ul class="card-features">
-                <li><span class="check-icon">✓</span> Séries de tests interactifs & QCM chronométrés</li>
-                <li><span class="check-icon">✓</span> Moteur d'évaluation et calcul de score de progression</li>
-                <li><span class="check-icon">✓</span> Architecture Android moderne avec support hors-ligne</li>
-              </ul>
-              <div class="tech-tags">
-                <span class="tech-tag">Kotlin & Jetpack Compose</span>
-                <span class="tech-tag">Android SDK</span>
-                <span class="tech-tag">Base de Données Locale (Room)</span>
-                <span class="tech-tag">Analytics</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJECT 2 : WATERMAP (WINOU EL MAA) -->
-          <div class="solution-card featured" data-category="apps">
-            <div class="card-badge-top">Application Mobile &bull; Géo-Services</div>
-            <div class="card-content">
-              <div class="card-icon-box water-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-                  <circle cx="12" cy="13" r="3"/>
-                </svg>
-              </div>
-              <h3 class="card-title">WaterMap <span class="card-subname">(Winou El Maa)</span></h3>
-              <p class="card-tagline">Cartographie collaborative et suivi en temps réel des ressources en eau</p>
-              <p class="card-desc">
-                Plateforme mobile et cartographique dédiée à la géolocalisation des points d'eau, au signalement instantané des incidents de distribution et au monitoring participatif en direct.
-              </p>
-              <ul class="card-features">
-                <li><span class="check-icon">✓</span> Cartographie interactive haute précision & géolocalisation GPS</li>
-                <li><span class="check-icon">✓</span> Signalements participatifs en direct avec modération</li>
-                <li><span class="check-icon">✓</span> Notifications géociblées et alertes prédictives</li>
-              </ul>
-              <div class="tech-tags">
-                <span class="tech-tag">Google Maps API</span>
-                <span class="tech-tag">Android (Kotlin)</span>
-                <span class="tech-tag">Bases Spatiales PostGIS</span>
-                <span class="tech-tag">Real-Time Sync</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJECT 3 : FINANCE & FINTECH -->
-          <div class="solution-card" data-category="enterprise">
-            <div class="card-content">
-              <div class="card-icon-box finance-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-              </div>
-              <h3 class="card-title">Systèmes & Solutions FinTech</h3>
-              <p class="card-tagline">Architecture Java / Spring Boot & flux transactionnels sécurisés</p>
-              <p class="card-desc">
-                Accompagnement de grands comptes financiers dans la conception de pipelines transactionnels sécurisés, intégrations de passerelles de paiement et conformité réglementaire.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">Java / Spring Boot</span>
-                <span class="tech-tag">PostgreSQL / Oracle</span>
-                <span class="tech-tag">Microservices</span>
-                <span class="tech-tag">Chiffrement Bancaire</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJECT 4 : HEALTHTECH -->
-          <div class="solution-card" data-category="enterprise">
-            <div class="card-content">
-              <div class="card-icon-box health-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              </div>
-              <h3 class="card-title">Plateformes E-Santé & Télémédecine</h3>
-              <p class="card-tagline">Portails Angular, applications mobiles & dossiers patients</p>
-              <p class="card-desc">
-                Développement et audit d'écosystèmes applicatifs pour la prise de rendez-vous médicaux, la gestion des dossiers patients chiffrés et le télé-suivi des soins.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">Spring Boot API</span>
-                <span class="tech-tag">Flutter / iOS / Android</span>
-                <span class="tech-tag">HDS / RGPD</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJECT 5 : RETAIL & COMMERCE -->
-          <div class="solution-card" data-category="enterprise">
-            <div class="card-content">
-              <div class="card-icon-box retail-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-              </div>
-              <h3 class="card-title">Écosystèmes E-Commerce & Retail</h3>
-              <p class="card-tagline">Expérience d'achat ultra-rapide et gestion d'inventaire</p>
-              <p class="card-desc">
-                Conception de plateformes omnichannel modulaires, optimisées pour la conversion, la synchronisation des stocks en temps réel et la scalabilité lors des pics de trafic.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">Angular / TypeScript</span>
-                <span class="tech-tag">Spring Cloud</span>
-                <span class="tech-tag">Redis Cache</span>
-                <span class="tech-tag">PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION SERVICES & CONSEIL -->
-    <section class="section-services" id="services">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-pill">Notre Offre de Valeur</div>
-          <h2 class="section-title">Services & <span class="text-gradient">Accompagnement</span> Sur-Mesure</h2>
-          <p class="section-subtitle">
-            De l'idéation stratégique jusqu'au déploiement et au support technique continu, DevCraft Solutions est votre partenaire technologique d'excellence.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          
-          <div class="service-card">
-            <div class="service-number">01</div>
-            <div class="service-icon-svg">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <h3 class="service-title">Développement Mobile (Kotlin Android, Flutter & iOS)</h3>
-            <p class="service-text">
-              Conception d'applications mobiles haut de gamme en Kotlin natif (Jetpack Compose) ou en Flutter pour une expérience fluide et unifiée sur Android et iOS.
-            </p>
-            <ul class="service-list">
-              <li>Applications Android natives (Kotlin, Coroutines, Flow)</li>
-              <li>Applications cross-platform Flutter (iOS & Android)</li>
-              <li>Intégration d'APIs REST, cartographie & persistance locale</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-number">02</div>
-            <div class="service-icon-svg">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-            </div>
-            <h3 class="service-title">Architecture Backend (Java & Spring Boot)</h3>
-            <p class="service-text">
-              Développement de microservices, de passerelles d'APIs et de backends transactionnels robustes construits sur l'écosystème éprouvé Java et Spring Boot.
-            </p>
-            <ul class="service-list">
-              <li>Microservices Spring Boot 3 & Clean Architecture</li>
-              <li>Sécurisation Spring Security, OAuth2 et JWT</li>
-              <li>Modélisation et optimisation de bases de données (SQL & NoSQL)</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-number">03</div>
-            <div class="service-icon-svg">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3 class="service-title">Développement Web (Angular & TypeScript)</h3>
-            <p class="service-text">
-              Création de portails web modernes, d'applications métiers complexes et de tableaux de bord performants basés sur Angular et TypeScript.
-            </p>
-            <ul class="service-list">
-              <li>Applications Single Page (SPA) Angular modulaires</li>
-              <li>Gestion d'état avec RxJS et architecture par composants</li>
-              <li>Interfaces responsives, ergonomiques et ultra-rapides</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-number">04</div>
-            <div class="service-icon-svg">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-            </div>
-            <h3 class="service-title">Conseil, Audit & Accompagnement Stratégique</h3>
-            <p class="service-text">
-              Accompagnement des directeurs techniques et équipes de développement pour fiabiliser les choix d'architecture, rationaliser la dette technique et accélérer la mise en production.
-            </p>
-            <ul class="service-list">
-              <li>Audits de code Java, Angular, Kotlin & bases de données</li>
-              <li>Revue d'architecture logicielle & migration de systèmes</li>
-              <li>Mentoring technique et bonnes pratiques d'ingénierie</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION EXPERTISE SECTORIELLE -->
+    <!-- SECTION EXPERTISE -->
     <section class="section-expertise" id="expertise">
-      <div class="container">
-        <div class="expertise-box">
-          <div class="expertise-header">
-            <div class="badge-pill">Secteurs Clés</div>
-            <h2 class="section-title">Une expertise forgée sur des <span class="text-gradient">défis concrets</span></h2>
-            <p class="section-subtitle">
-              Chaque industrie a ses propres impératifs réglementaires, ses volumétries et ses exigences de sécurité. DevCraft Solutions s'adapte à votre contexte métier.
-            </p>
-          </div>
-
-          <div class="expertise-grid">
-            <div class="expertise-item">
-              <div class="expertise-icon-svg">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-              </div>
-              <h4>Finance & Banque</h4>
-              <p>Fiabilité sans compromis, architectures Java / Spring Boot, transactions sécurisées et haute disponibilité.</p>
-            </div>
-
-            <div class="expertise-item">
-              <div class="expertise-icon-svg">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              </div>
-              <h4>Santé & E-Health</h4>
-              <p>Interopérabilité, respect rigoureux des données de santé et interfaces intuitives soignants / patients.</p>
-            </div>
-
-            <div class="expertise-item">
-              <div class="expertise-icon-svg">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-              </div>
-              <h4>Commerce & Distribution</h4>
-              <p>Gestion en temps réel des stocks, synchronisation multi-canaux et haute conversion mobile.</p>
-            </div>
-
-            <div class="expertise-item">
-              <div class="expertise-icon-svg">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <h4>Services & Géo-Applications</h4>
-              <p>Applications cartographiques interactives, bases de données spatiales et architectures temps réel.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION FAQ / QUESTIONS-REPONSES INTERACTIVE -->
-    <section class="section-faq" id="faq">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-pill">Foire Aux Questions</div>
-          <h2 class="section-title">Questions & <span class="text-gradient">Réponses Fréquentes</span></h2>
-          <p class="section-subtitle">
-            Tout ce que vous devez savoir pour collaborer avec DevCraft Solutions. Vous avez une question spécifique ? Contactez-nous directement via le formulaire ci-dessous.
+      <div class="section-container">
+        
+        <div class="section-heading">
+          <span class="section-eyebrow">Domaines de compétences</span>
+          <h2 class="section-title">Une maîtrise ciblée des technologies critiques.</h2>
+          <p class="section-lead">
+            Nous intervenons sur des écosystèmes techniques exigeants où la robustesse, la sécurité et la maintenabilité sont prioritaires.
           </p>
         </div>
 
-        <div class="faq-container">
+        <div class="expertise-grid">
+          
+          <!-- Card 1: Backend -->
+          <div class="expertise-card">
+            <div class="expertise-card-header">
+              <div class="expertise-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="expertise-card-title">Backend & Architecture</h3>
+            </div>
+            <p class="expertise-card-desc">
+              Conception d'architectures robustes, APIs et systèmes distribués pour applications métier critiques.
+            </p>
+            <div class="expertise-card-footer">
+              <div class="expertise-techs">Java · Spring Boot · Microservices</div>
+              <a href="#contact" class="expertise-link">
+                <span>Découvrir</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Applications -->
+          <div class="expertise-card">
+            <div class="expertise-card-header">
+              <div class="expertise-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="expertise-card-title">Web Applications</h3>
+            </div>
+            <p class="expertise-card-desc">
+              Interfaces métier modernes, performantes et maintenables avec des temps de réponse optimaux.
+            </p>
+            <div class="expertise-card-footer">
+              <div class="expertise-techs">Angular · TypeScript · React</div>
+              <a href="#contact" class="expertise-link">
+                <span>Découvrir</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Mobile -->
+          <div class="expertise-card">
+            <div class="expertise-card-header">
+              <div class="expertise-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="expertise-card-title">Mobile</h3>
+            </div>
+            <p class="expertise-card-desc">
+              Applications mobiles natives et cross-platform conçues pour une utilisation réelle et fluide en production.
+            </p>
+            <div class="expertise-card-footer">
+              <div class="expertise-techs">Flutter · Kotlin · iOS</div>
+              <a href="#contact" class="expertise-link">
+                <span>Découvrir</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Data & Persistence -->
+          <div class="expertise-card">
+            <div class="expertise-card-header">
+              <div class="expertise-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="expertise-card-title">Data & Persistence</h3>
+            </div>
+            <p class="expertise-card-desc">
+              Modélisation relationnelle et NoSQL, performances SQL, indexation et intégrité rigoureuse des données applicatives.
+            </p>
+            <div class="expertise-card-footer">
+              <div class="expertise-techs">PostgreSQL · Oracle · Redis</div>
+              <a href="#contact" class="expertise-link">
+                <span>Découvrir</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION RÉALISATIONS (PRODUITS JUSQU'À LA PRODUCTION) -->
+    <section class="section-realisations" id="realisations">
+      <div class="section-container">
+        
+        <div class="section-heading text-center">
+          <span class="section-eyebrow">RÉALISATIONS</span>
+          <h2 class="section-title">Des produits conçus jusqu'à la production.</h2>
+        </div>
+
+        <div class="realisations-showcase-grid">
+          
+          <!-- Card 1 : Winou el Maa -->
+          <div class="showcase-card">
+            <div class="showcase-content">
+              <div class="showcase-brand">
+                <img src="assets/projects/water_icon.jpg" alt="Logo Winou el Maa" class="showcase-logo">
+                <div class="showcase-titles">
+                  <h3 class="showcase-name">Winou el Maa</h3>
+                  <span class="showcase-subname">WaterMap</span>
+                </div>
+              </div>
+
+              <p class="showcase-desc">
+                Plateforme de suivi de la qualité de l'eau et points d'eau au Maroc.
+              </p>
+
+              <div class="showcase-pills">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">PostgreSQL</span>
+              </div>
+
+              <a href="#contact" class="showcase-link">
+                <span>Voir le projet</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+
+            <!-- Device Mockup Visual -->
+            <div class="showcase-mockup-wrapper mockup-water">
+              <div class="mockup-device mockup-phone-back">
+                <img src="assets/projects/water_screen1.png" alt="Winou el Maa Accueil" class="mockup-img">
+              </div>
+              <div class="mockup-device mockup-phone-front">
+                <img src="assets/projects/water_screen2.png" alt="Winou el Maa Carte Live" class="mockup-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 : CiviScore -->
+          <div class="showcase-card">
+            <div class="showcase-content">
+              <div class="showcase-brand">
+                <img src="assets/projects/civiscore_icon.png" alt="Logo CiviScore" class="showcase-logo">
+                <div class="showcase-titles">
+                  <h3 class="showcase-name">CiviScore</h3>
+                  <span class="showcase-subname">Examen Civique</span>
+                </div>
+              </div>
+
+              <p class="showcase-desc">
+                Application mobile d'entraînement à l'examen civique marocain.
+              </p>
+
+              <div class="showcase-pills">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Firebase</span>
+                <span class="tech-pill">Dart</span>
+              </div>
+
+              <a href="#contact" class="showcase-link">
+                <span>Voir le projet</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+
+            <!-- Device Mockup Visual -->
+            <div class="showcase-mockup-wrapper mockup-civiscore">
+              <div class="mockup-device mockup-phone-back">
+                <img src="assets/projects/civiscore_screen1.jpg" alt="CiviScore Préparation" class="mockup-img">
+              </div>
+              <div class="mockup-device mockup-phone-front">
+                <img src="assets/projects/civiscore_screen2.jpg" alt="CiviScore QCM Interactif" class="mockup-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 : Plateforme d'ingénierie d'entreprise -->
+          <div class="showcase-card">
+            <div class="showcase-content">
+              <div class="showcase-brand">
+                <div class="showcase-logo-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="showcase-titles">
+                  <h3 class="showcase-name">Plateforme d'ingénierie d'entreprise</h3>
+                </div>
+              </div>
+
+              <p class="showcase-desc">
+                Système interne de gestion de flux métiers et de données critiques.
+              </p>
+
+              <div class="showcase-pills">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">Angular</span>
+              </div>
+
+              <a href="#contact" class="showcase-link">
+                <span>Voir le projet</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+
+            <!-- Device Mockup Visual -->
+            <div class="showcase-mockup-wrapper mockup-enterprise">
+              <div class="mockup-dashboard">
+                <img src="assets/projects/enterprise_preview.svg" alt="Plateforme Entreprise Dashboard" class="mockup-img">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION NOTRE APPROCHE -->
+    <section class="section-approche" id="approche">
+      <div class="section-container">
+        
+        <div class="section-heading">
+          <span class="section-eyebrow">Méthode de travail</span>
+          <h2 class="section-title">Notre approche d'ingénierie</h2>
+          <p class="section-lead">
+            Un processus structuré et transparent, pensé pour minimiser la dette technique et garantir la livraison dans les délais.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          
+          <div class="approach-step">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Comprendre</h3>
+            <p class="step-desc">
+              Immersion dans vos règles métier, analyse des flux d'informations et identification des contraintes de volumétrie et de sécurité.
+            </p>
+          </div>
+
+          <div class="approach-step">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Concevoir</h3>
+            <p class="step-desc">
+              Élaboration d'architectures découplées, choix de stacks éprouvées et modélisation pérenne des données applicatives.
+            </p>
+          </div>
+
+          <div class="approach-step">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Développer</h3>
+            <p class="step-desc">
+              Implémentation selon les principes de la Clean Architecture, tests automatisés et revues de code systématiques.
+            </p>
+          </div>
+
+          <div class="approach-step">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Livrer</h3>
+            <p class="step-desc">
+              Déploiements automatisés via CI/CD, conteneurisation Docker/Kubernetes et validation en conditions réelles de production.
+            </p>
+          </div>
+
+          <div class="approach-step">
+            <div class="step-num">05</div>
+            <h3 class="step-title">Faire évoluer</h3>
+            <p class="step-desc">
+              Monitoring proactif des performances, maintenance préventive et montées de version sans rupture de service.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION SECTEURS MÉTIER (ASYMMETRIQUE & CLAIRE) -->
+    <section class="section-secteurs" id="secteurs">
+      <div class="section-container">
+        
+        <div class="section-heading">
+          <span class="section-eyebrow">Domaines d'intervention</span>
+          <h2 class="section-title">Une expertise adaptée aux systèmes métier exigeants.</h2>
+          <p class="section-lead">
+            Nous répondons aux exigences de secteurs où la fiabilité opérationnelle et l'intégrité des flux ne souffrent aucun compromis.
+          </p>
+        </div>
+
+        <div class="secteurs-asymmetric-layout">
+          
+          <!-- Main Left Feature Card -->
+          <div class="secteur-card secteur-featured">
+            <div class="secteur-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="secteur-title">Finance & Banque</h3>
+            <p class="secteur-lead-text">Transactions, sécurité, performance et conformité réglementaire.</p>
+            <p class="secteur-desc">
+              Conception de plateformes résilientes capables d'absorber d'importants volumes de transactions avec une traçabilité totale, un chiffrement strict des données et une tolérance de panne optimale.
+            </p>
+            <div class="secteur-tagline">Microservices &bull; Flux transactionnels &bull; Haute Disponibilité</div>
+          </div>
+
+          <!-- Right Column of Cards -->
+          <div class="secteurs-column">
+            
+            <div class="secteur-card">
+              <div class="secteur-header-row">
+                <div class="secteur-icon-small">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h3 class="secteur-title">Santé & E-Health</h3>
+              </div>
+              <p class="secteur-desc">
+                Interopérabilité des systèmes, respect rigoureux des données de santé et applications intuitives soignants / patients.
+              </p>
+            </div>
+
+            <div class="secteur-card">
+              <div class="secteur-header-row">
+                <div class="secteur-icon-small">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                </div>
+                <h3 class="secteur-title">Commerce & Distribution</h3>
+              </div>
+              <p class="secteur-desc">
+                Flux temps réel, synchronisation d'inventaires multi-canaux et plateformes métier pensées pour la conversion.
+              </p>
+            </div>
+
+            <div class="secteur-card">
+              <div class="secteur-header-row">
+                <div class="secteur-icon-small">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                  </svg>
+                </div>
+                <h3 class="secteur-title">Services géolocalisés</h3>
+              </div>
+              <p class="secteur-desc">
+                Cartographie interactive, données spatiales PostGIS, calcul d'itinéraires et applications mobiles connectées en temps réel.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION STACK TECHNOLOGIQUE -->
+    <section class="section-stack" id="stack">
+      <div class="section-container">
+        
+        <div class="section-heading">
+          <span class="section-eyebrow">Écosystème</span>
+          <h2 class="section-title">Technologies éprouvées</h2>
+          <p class="section-lead">
+            Des frameworks et technologies industrielles sélectionnés pour leur maturité et leur fiabilité à long terme.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-box">
+            <h3 class="stack-category-name">Backend</h3>
+            <p class="stack-items">Java 21 · Spring Boot 3 · Microservices · REST & GraphQL · Kafka · Clean Architecture</p>
+          </div>
+          <div class="stack-box">
+            <h3 class="stack-category-name">Frontend Web</h3>
+            <p class="stack-items">Angular · TypeScript · RxJS · React · Single Page Apps · Web Performance</p>
+          </div>
+          <div class="stack-box">
+            <h3 class="stack-category-name">Mobile</h3>
+            <p class="stack-items">Flutter · Dart · Kotlin Android · iOS (Swift) · Offline-First · Push Notifications</p>
+          </div>
+          <div class="stack-box">
+            <h3 class="stack-category-name">Data & Cloud</h3>
+            <p class="stack-items">PostgreSQL · PostGIS · Oracle · Redis · Docker · CI/CD · GCP & AWS</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section class="section-faq" id="faq">
+      <div class="section-container">
+        
+        <div class="section-heading">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="section-title">Questions fréquentes</h2>
+          <p class="section-lead">
+            Les réponses aux questions les plus courantes sur notre fonctionnement et nos modalités de collaboration.
+          </p>
+        </div>
+
+        <div class="faq-list">
           
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Quels sont vos langages et frameworks de prédilection ?</span>
-              <span class="faq-icon">+</span>
+            <button class="faq-toggle" aria-expanded="false">
+              <span class="faq-question">Quels types de missions prenez-vous en charge ?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-content">
               <p>
-                Nous sommes spécialisés dans les technologies les plus robustes et pérennes de l'industrie : <strong>Java</strong> et <strong>Spring Boot</strong> pour les architectures backend et microservices, <strong>Angular</strong> et <strong>TypeScript</strong> pour les applications web, <strong>Kotlin</strong> et <strong>Android natif</strong> ainsi que <strong>Flutter</strong> pour le mobile multiplateforme (iOS & Android), complétés par une solide expertise en <strong>bases de données</strong> (PostgreSQL, Oracle, MySQL, Redis).
+                Nous intervenons sur l'ensemble du cycle de vie logiciel : création de nouvelles applications mobiles (Flutter / Kotlin), développement d'applications web d'entreprise (Angular / TypeScript), architecture de backends critiques (Java / Spring Boot), et audits d'architecture ou de performance.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Quel type de projets prenez-vous en charge chez DevCraft Solutions ?</span>
-              <span class="faq-icon">+</span>
+            <button class="faq-toggle" aria-expanded="false">
+              <span class="faq-question">Comment s'articule une collaboration avec DevCraft Solutions ?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-content">
               <p>
-                Nous intervenons sur l'ensemble du cycle de développement logiciel : conception d'applications mobiles complètes (Android natif & Flutter), développement de plateformes web Angular / TypeScript sur-mesure, backends Spring Boot, audits d'architecture et missions de conseil stratégique pour des projets critiques.
+                Chaque mission démarre par un atelier de cadrage technique pour définir clairement les objectifs, les contraintes et les livrables. Nous travaillons ensuite par itérations régulières et transparentes avec des jalons de validation concrets.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Comment se déroule un accompagnement ou une mission de conseil ?</span>
-              <span class="faq-icon">+</span>
+            <button class="faq-toggle" aria-expanded="false">
+              <span class="faq-question">Pouvez-vous intervenir sur un projet ou une base de code existante ?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-content">
               <p>
-                Notre démarche commence par une phase d'écoute et d'analyse technique approfondie. Nous établissons un diagnostic clair, proposons une feuille de route pragmatique avec des jalons précis, et nous vous accompagnons dans la mise en œuvre selon des méthodes agiles et transparentes.
+                Oui. Nous réalisons régulièrement des audits de code, des refactorisations d'architectures legacy, des montées de version majeures (par exemple migration Java / Spring Boot ou Angular) et la résolution de dettes techniques.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Quels sont vos délais typiques pour lancer un projet ou un MVP ?</span>
-              <span class="faq-icon">+</span>
+            <button class="faq-toggle" aria-expanded="false">
+              <span class="faq-question">Comment obtenir une première estimation ou un échange ?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-content">
               <p>
-                Grâce à notre maîtrise des technologies d'entreprise (Java / Spring Boot, Angular, Kotlin, Flutter) et à nos standards d'ingénierie, nous sommes capables de concevoir et livrer un MVP opérationnel de haute qualité en 3 à 6 semaines selon la complexité fonctionnelle.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Comment fonctionne le formulaire de contact ci-dessous ?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Le formulaire transmet instantanément votre demande à notre équipe avec validation et confirmation directe. Vous pouvez également nous joindre directement par email.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Comment obtenir une estimation ou un premier échange de cadrage ?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Il vous suffit de remplir le formulaire ci-dessous ou de nous contacter directement par email. Nous analysons votre besoin et revenons vers vous sous 24 à 48 heures avec une première proposition constructive.
+                Utilisez simplement le formulaire ci-dessous ou écrivez-nous à <a href="mailto:contact@devcraft-solutions.org" class="inline-link">contact@devcraft-solutions.org</a>. Nous analysons votre besoin et vous répondons sous 24 à 48 heures.
               </p>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- SECTION CONTACT -->
+    <!-- SECTION CTA & CONTACT -->
     <section class="section-contact" id="contact">
-      <div class="container">
-        <div class="contact-wrapper">
+      <div class="section-container">
+        
+        <div class="contact-card">
           
-          <div class="contact-info">
-            <div class="badge-pill">Échange & Cadrage</div>
-            <h2 class="section-title">Donnons vie à votre <span class="text-gradient">prochain projet</span></h2>
-            <p class="contact-desc">
-              Vous avez un projet d'application mobile, une plateforme web Angular, un backend Spring Boot ou besoin d'un audit technique expert ? Contactez-nous dès aujourd'hui.
+          <div class="contact-intro">
+            <span class="section-eyebrow">Démarrer une collaboration</span>
+            <h2 class="contact-heading">
+              Un projet logiciel complexe ?
+            </h2>
+            <p class="contact-subheading">
+              Parlons de votre architecture, de votre produit ou de votre prochaine modernisation logicielle.
             </p>
 
-            <div class="info-items">
-              <div class="info-item">
-                <div class="info-icon-svg">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                </div>
-                <div>
-                  <strong>Entreprise</strong>
-                  <p>DevCraft Solutions</p>
-                </div>
+            <div class="contact-details">
+              <div class="contact-detail-row">
+                <span class="contact-label">Email direct :</span>
+                <a href="mailto:contact@devcraft-solutions.org" class="contact-value">contact@devcraft-solutions.org</a>
               </div>
-
-              <div class="info-item">
-                <div class="info-icon-svg">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
-                <div>
-                  <strong>Email Professionnel</strong>
-                  <p><a href="mailto:contact@devcraft-solutions.org" class="link-hover">contact@devcraft-solutions.org</a></p>
-                </div>
+              <div class="contact-detail-row">
+                <span class="contact-label">Société :</span>
+                <span class="contact-value">DevCraft Solutions — EURL</span>
               </div>
-
-              <div class="info-item">
-                <div class="info-icon-svg">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div>
-                  <strong>Domaines d'expertise</strong>
-                  <p>Java / Spring Boot, Angular, Kotlin Android, Flutter, iOS, Bases de données & Cloud</p>
-                </div>
+              <div class="contact-detail-row">
+                <span class="contact-label">Spécialisation :</span>
+                <span class="contact-value">Ingénierie logicielle & Architecture d'entreprise</span>
               </div>
             </div>
           </div>
 
-          <!-- Operational Contact Form -->
-          <div class="contact-form-card">
-            <h3 class="form-title">Envoyez-nous un message</h3>
-            <p class="form-subtitle">Réponse sous 24h &bull; Diagnostic initial offert</p>
-
+          <!-- Functional Contact Form -->
+          <div class="contact-form-wrapper">
             <form id="contact-form" class="contact-form" action="https://formsubmit.co/contact@devcraft-solutions.org" method="POST">
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_subject" value="Nouveau message depuis le site DevCraft Solutions">
+              <input type="hidden" name="_subject" value="Nouveau contact depuis le site DevCraft Solutions">
               <input type="hidden" name="_template" value="table">
 
-              <div class="form-group">
-                <label for="form-name">Votre Nom & Prénom *</label>
-                <input type="text" id="form-name" name="name" placeholder="Entrez votre nom complet" required>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Nom complet *</label>
+                  <input type="text" id="form-name" name="name" placeholder="Ex: Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email professionnel *</label>
+                  <input type="email" id="form-email" name="email" placeholder="nom@entreprise.com" required>
+                </div>
               </div>
 
               <div class="form-group">
-                <label for="form-email">Adresse Email *</label>
-                <input type="email" id="form-email" name="email" placeholder="nom@entreprise.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="form-service">Type de besoin</label>
+                <label for="form-service">Sujet de votre projet</label>
                 <select id="form-service" name="service">
-                  <option value="mobile">Développement Mobile (Kotlin Android / Flutter iOS)</option>
-                  <option value="backend">Backend Java / Spring Boot & Microservices</option>
-                  <option value="web">Application Web Angular / TypeScript</option>
-                  <option value="db">Base de Données, Modélisation & Optimisation SQL</option>
-                  <option value="conseil">Conseil en Architecture & Audit Technique</option>
-                  <option value="autre">Autre projet / Partenariat</option>
+                  <option value="architecture">Architecture Backend (Java / Spring Boot)</option>
+                  <option value="web">Application Web (Angular / TypeScript)</option>
+                  <option value="mobile">Application Mobile (Flutter / Kotlin)</option>
+                  <option value="data">Base de données & Persistance</option>
+                  <option value="audit">Audit & Conseil technique</option>
+                  <option value="autre">Autre demande</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="form-message">Parlez-nous de votre projet *</label>
-                <textarea id="form-message" name="message" rows="4" placeholder="Décrivez succinctement vos objectifs, votre calendrier ou vos contraintes techniques..." required></textarea>
+                <label for="form-message">Décrivez votre besoin *</label>
+                <textarea id="form-message" name="message" rows="4" placeholder="Contexte, calendrier prévisionnel, contraintes techniques..." required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
-                <span>Envoyer la demande</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span>Envoyer le message</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
               </button>
 
               <div id="form-status" class="form-status" aria-live="polite"></div>
@@ -734,54 +693,55 @@
           </div>
 
         </div>
+
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="DevCraft Solutions - Your Solution Partner" class="footer-logo">
-        <p class="footer-tagline"><strong>DevCraft Solutions — EURL</strong> &bull; Your Solution Partner. Cabinet d'ingénierie logicielle & conseil : Java, Spring Boot, Angular, Kotlin, Flutter, iOS, Android & Bases de données.</p>
-        <p class="footer-contact-item">
-          <strong>Contact :</strong> <a href="mailto:contact@devcraft-solutions.org" class="link-hover">contact@devcraft-solutions.org</a>
-        </p>
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <img src="assets/logo.svg" alt="DevCraft Solutions" class="footer-logo">
+          <p class="footer-tagline">
+            Cabinet d'ingénierie logicielle & conseil en architecture logicielle.
+          </p>
+          <a href="mailto:contact@devcraft-solutions.org" class="footer-email">contact@devcraft-solutions.org</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#approche">Notre Approche</a></li>
+            <li><a href="#secteurs">Secteurs</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-legal-col">
+          <h4 class="footer-col-title">Informations</h4>
+          <ul class="footer-links">
+            <li><span>DevCraft Solutions — EURL</span></li>
+            <li><button type="button" class="legal-trigger-btn" data-modal="modal-legal">Mentions Légales</button></li>
+            <li><button type="button" class="legal-trigger-btn" data-modal="modal-privacy">Politique de Confidentialité</button></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-nav">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#stack">Expertise & Stack</a></li>
-          <li><a href="#solutions">Réalisations</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#expertise">Secteurs Métier</a></li>
-          <li><a href="#faq">Questions Fréquentes</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> DevCraft Solutions — EURL. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <button type="button" class="legal-inline-btn" data-modal="modal-legal">Mentions Légales</button>
+          <span class="sep">&bull;</span>
+          <button type="button" class="legal-inline-btn" data-modal="modal-privacy">Confidentialité</button>
+        </div>
       </div>
 
-      <div class="footer-legal-col">
-        <h4>Informations Légales</h4>
-        <ul>
-          <li><strong>Raison sociale :</strong> DevCraft Solutions — EURL</li>
-          <li><button type="button" class="legal-modal-trigger" data-modal="modal-legal">Mentions Légales</button></li>
-          <li><button type="button" class="legal-modal-trigger" data-modal="modal-privacy">Politique de Confidentialité</button></li>
-          <li><a href="https://devcraft-solutions.org">https://devcraft-solutions.org</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; <span id="current-year"></span> DevCraft Solutions — EURL. Tous droits réservés.</p>
-      <div class="footer-legal-links">
-        <button type="button" class="legal-link-btn" data-modal="modal-legal">Mentions Légales</button>
-        <span>&bull;</span>
-        <button type="button" class="legal-link-btn" data-modal="modal-privacy">Politique de Confidentialité</button>
-        <span>&bull;</span>
-        <a href="mailto:contact@devcraft-solutions.org" class="legal-link-btn">contact@devcraft-solutions.org</a>
-      </div>
     </div>
   </footer>
 
@@ -793,28 +753,25 @@
         <button type="button" class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
       </div>
       <div class="modal-body">
-        <h4>1. Éditeur & Raison Sociale</h4>
+        <h4>1. Éditeur du site</h4>
         <p><strong>DevCraft Solutions — EURL</strong><br>
-        Cabinet de conseil et d'ingénierie en systèmes informatiques, architectures logicielles et développement d'applications web et mobiles.<br>
-        <strong>Email officiel de contact :</strong> <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a><br>
-        <strong>Site Web officiel :</strong> <a href="https://devcraft-solutions.org">https://devcraft-solutions.org</a></p>
+        Société d'ingénierie et de conseil en systèmes informatiques et développement logiciel.<br>
+        Email : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a><br>
+        Site Web : <a href="https://devcraft-solutions.org">https://devcraft-solutions.org</a></p>
 
-        <h4>2. Hébergement du Site Web</h4>
-        <p>Le site est hébergé par la plateforme d'infrastructure <strong>GitHub Pages</strong> :<br>
-        <strong>GitHub, Inc.</strong><br>
+        <h4>2. Hébergement</h4>
+        <p>Le site est hébergé par :<br>
+        <strong>GitHub Inc.</strong><br>
         88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.<br>
-        Site Web : <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">https://pages.github.com</a></p>
+        Site : <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">pages.github.com</a></p>
 
-        <h4>3. Propriété Intellectuelle</h4>
-        <p>L'ensemble des contenus, marques, logos, identités visuelles, code source et architectures présentés sur ce site sont la propriété exclusive de <strong>DevCraft Solutions — EURL</strong>, sauf mention expresse contraire. Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable.</p>
-
-        <h4>4. Contact</h4>
-        <p>Pour toute question ou demande relative aux mentions légales, veuillez écrire à : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.</p>
+        <h4>3. Propriété intellectuelle</h4>
+        <p>L'ensemble des marques, logos, visuels et codes sources présentés sur ce site sont la propriété exclusive de <strong>DevCraft Solutions — EURL</strong>, sauf mention contraire.</p>
       </div>
     </div>
   </div>
 
-  <!-- MODAL: POLITIQUE DE CONFIDENTIALITÉ (RGPD / GOOGLE PLAY) -->
+  <!-- MODAL: POLITIQUE DE CONFIDENTIALITÉ (RGPD) -->
   <div id="modal-privacy" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-privacy-title">
     <div class="modal-dialog">
       <div class="modal-header">
@@ -822,36 +779,24 @@
         <button type="button" class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
       </div>
       <div class="modal-body">
-        <h4>1. Responsable du Traitement des Données</h4>
-        <p>Le responsable du traitement des données est <strong>DevCraft Solutions — EURL</strong>.<br>
-        Contact Délégué à la Protection des Données (DPO) : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a></p>
+        <h4>1. Données personnelles & Formulaire</h4>
+        <p>Les informations recueillies via le formulaire de contact (nom, email, message) sont uniquement utilisées pour répondre à vos demandes de renseignement ou propositions de projets. Elles ne sont jamais cédées ou vendues à des tiers.</p>
 
-        <h4>2. Collecte & Utilisation des Données du Site Web</h4>
-        <p>Sur notre site vitrine (https://devcraft-solutions.org), les seules informations personnelles collectées sont celles que vous transmettez volontairement via le formulaire de contact (Nom, Prénom, Adresse Email, Message). Ces données sont exclusivement utilisées pour répondre à votre demande commerciale ou technique et ne font l'objet d'aucune cession ou commercialisation à des tiers.</p>
-
-        <h4>3. Confidentialité des Applications Mobiles (CiviScore, Winou El Maa)</h4>
-        <p>Dans le cadre de nos applications éditées et publiées (notamment sur Google Play) :
-        <ul>
-          <li><strong>CiviScore (Examen Civique) :</strong> Aucune donnée personnelle nominative n'est transmise à des tiers. Les scores d'entraînement et la progression peuvent être stockés localement sur votre terminal.</li>
-          <li><strong>WaterMap (Winou El Maa) :</strong> Les données de géolocalisation ne sont utilisées qu'avec votre accord explicite pour l'affichage cartographique et le signalement collaboratif des ressources.</li>
-        </ul>
-        </p>
-
-        <h4>4. Vos Droits (Conformité RGPD)</h4>
-        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous bénéficiez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données. Vous pouvez exercer ce droit à tout moment par simple email à : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.</p>
-
-        <h4>5. Cookies & Traceurs</h4>
-        <p>Ce site n'utilise aucun traceur publicitaire intrusif. Seuls des réglages d'ergonomie locaux (tels que la préférence du thème Clair/Sombre) sont conservés dans votre navigateur.</p>
+        <h4>2. Vos Droits RGPD</h4>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données en écrivant à : <a href="mailto:contact@devcraft-solutions.org">contact@devcraft-solutions.org</a>.</p>
       </div>
     </div>
   </div>
 
   <!-- Scroll to Top Button -->
-  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Retour en haut" title="Remonter en haut de page">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Remonter en haut de page" title="Remonter en haut">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
   </button>
 
-  <!-- Main JavaScript File -->
+  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>

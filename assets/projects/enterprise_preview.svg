@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="epGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6500" />
+      <stop offset="100%" stop-color="#FF8A3D" />
+    </linearGradient>
+    <filter id="epShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <g filter="url(#epShadow)">
+    <!-- Main Window Frame -->
+    <rect x="20" y="20" width="460" height="540" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Window Top Header -->
+    <path d="M 20 36 C 20 27.16 27.16 20 36 20 L 464 20 C 472.84 20 480 27.16 480 36 L 480 64 L 20 64 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="44" cy="42" r="5" fill="#EF4444" />
+    <circle cx="60" cy="42" r="5" fill="#F59E0B" />
+    <circle cx="76" cy="42" r="5" fill="#10B981" />
+    <rect x="150" y="34" width="200" height="16" rx="8" fill="#EDF2F7" />
+    <text x="250" y="46" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">enterprise-cluster-metrics</text>
+
+    <!-- Top Metric Cards -->
+    <rect x="40" y="80" width="125" height="70" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="52" y="102" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">TPS Performance</text>
+    <text x="52" y="132" font-family="-apple-system, sans-serif" font-size="20" font-weight="750" fill="#0F172A">48.2k<tspan font-size="11" font-weight="500" fill="#10B981"> /s</tspan></text>
+
+    <rect x="180" y="80" width="125" height="70" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="192" y="102" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Availability</text>
+    <text x="192" y="132" font-family="-apple-system, sans-serif" font-size="20" font-weight="750" fill="#0F172A">99.99%</text>
+
+    <rect x="320" y="80" width="125" height="70" rx="10" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="332" y="102" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#C2410C">Active Nodes</text>
+    <text x="332" y="132" font-family="-apple-system, sans-serif" font-size="20" font-weight="750" fill="#EA580C">16<tspan font-size="11" font-weight="500" fill="#C2410C"> pods</tspan></text>
+
+    <!-- Chart / Visual Stream -->
+    <rect x="40" y="165" width="405" height="150" rx="12" fill="#0F172A" />
+    <text x="60" y="195" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Distributed Transaction Stream</text>
+    <text x="60" y="214" font-family="-apple-system, sans-serif" font-size="10" font-weight="400" fill="#94A3B8">Real-time throughput across microservices</text>
+
+    <!-- Graph Line -->
+    <path d="M 60 275 Q 120 230, 180 255 T 280 210 T 360 230 T 425 190" fill="none" stroke="url(#orangeGrad)" stroke-width="3" stroke-linecap="round" />
+    <path d="M 60 275 Q 120 230, 180 255 T 280 210 T 360 230 T 425 190 L 425 290 L 60 290 Z" fill="url(#orangeGrad)" opacity="0.12" />
+
+    <circle cx="425" cy="190" r="4" fill="#FF6500" stroke="#FFFFFF" stroke-width="2" />
+
+    <!-- Services Table List -->
+    <rect x="40" y="330" width="405" height="205" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="60" y="358" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#334155">CORE BACKEND MICROSERVICES</text>
+
+    <!-- Row 1 -->
+    <rect x="55" y="375" width="375" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="75" cy="396" r="4" fill="#10B981" />
+    <text x="90" y="400" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#0F172A">auth-service-v3</text>
+    <text x="260" y="400" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Spring Boot 3 / OAuth2</text>
+    <rect x="365" y="386" width="55" height="20" rx="4" fill="#ECFDF5" />
+    <text x="392" y="400" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#059669">HEALTHY</text>
+
+    <!-- Row 2 -->
+    <rect x="55" y="425" width="375" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="75" cy="446" r="4" fill="#10B981" />
+    <text x="90" y="450" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#0F172A">payment-engine</text>
+    <text x="260" y="450" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Java 21 / PostgreSQL</text>
+    <rect x="365" y="436" width="55" height="20" rx="4" fill="#ECFDF5" />
+    <text x="392" y="450" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#059669">HEALTHY</text>
+
+    <!-- Row 3 -->
+    <rect x="55" y="475" width="375" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="75" cy="496" r="4" fill="#10B981" />
+    <text x="90" y="500" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#0F172A">data-sync-worker</text>
+    <text x="260" y="500" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Kafka / Redis Stream</text>
+    <rect x="365" y="486" width="55" height="20" rx="4" fill="#ECFDF5" />
+    <text x="392" y="500" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#059669">HEALTHY</text>
+  </g>
+</svg>
