@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" width="100%" height="100%" fill="none">
+  <!-- Window Container -->
+  <rect x="10" y="10" width="480" height="600" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- Window Top Bar (Shopify Admin Style) -->
+  <path d="M 10 24 C 10 16.27 16.27 10 24 10 L 476 10 C 483.73 10 490 16.27 490 24 L 490 52 L 10 52 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+  <circle cx="32" cy="31" r="4.5" fill="#EF4444" />
+  <circle cx="48" cy="31" r="4.5" fill="#F59E0B" />
+  <circle cx="64" cy="31" r="4.5" fill="#10B981" />
+  <rect x="120" y="22" width="260" height="18" rx="9" fill="#EDF2F7" />
+  <text x="250" y="35" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748B">admin.shopify.com/store/apps/thermoslip</text>
+
+  <!-- Shopify App Top Navigation Bar -->
+  <g transform="translate(10, 52)">
+    <rect x="0" y="0" width="480" height="50" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    
+    <!-- OrderJet Jet Icon Badge -->
+    <rect x="16" y="9" width="32" height="32" rx="8" fill="#4F46E5" />
+    <path d="M22 28L30 18L38 28H22Z" fill="#FFFFFF" />
+    <circle cx="30" cy="22" r="3" fill="#FFB320" />
+
+    <text x="56" y="26" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#0F172A">ThermoSlip</text>
+    <text x="56" y="38" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#4F46E5">OrderJet Printing Hub</text>
+
+    <!-- Shopify Badge -->
+    <rect x="195" y="15" width="84" height="20" rx="4" fill="#F0FDF4" stroke="#BBF7D0" />
+    <text x="237" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#15803D">SHOPIFY APP</text>
+
+    <!-- Printer Status -->
+    <rect x="290" y="15" width="104" height="20" rx="4" fill="#ECFDF5" stroke="#A7F3D0" />
+    <text x="342" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#047857">🖨️ 4×6" THERMAL</text>
+
+    <!-- Print CTA -->
+    <rect x="404" y="13" width="66" height="24" rx="4" fill="#4F46E5" />
+    <text x="437" y="29" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Imprimer</text>
+  </g>
+
+  <!-- Thermal Paper Packing Slip Visual (4x6 Aspect Ratio with Tear-off Zigzag) -->
+  <g transform="translate(60, 118)">
+    <!-- Slip shadow and body -->
+    <rect x="0" y="0" width="380" height="476" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    
+    <!-- Top tear decorative line -->
+    <line x1="0" y1="0" x2="380" y2="0" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 4" />
+
+    <!-- Slip Header (Shop name & Order #1001 from DEMO_ORDERS) -->
+    <text x="190" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="15" font-weight="900" fill="#0F172A" letter-spacing="0.5">BORDEREAU D'EXPÉDITION</text>
+    <text x="190" y="48" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#4F46E5">COMMANDE #1001 · BOUTIQUE DEMO</text>
+    
+    <line x1="20" y1="60" x2="360" y2="60" stroke="#0F172A" stroke-width="1.5" />
+
+    <!-- Customer & Shipping Details (Directly from demo-orders.ts) -->
+    <g transform="translate(20, 72)">
+      <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#64748B">DESTINATAIRE :</text>
+      <text x="0" y="30" font-family="-apple-system, sans-serif" font-size="12" font-weight="750" fill="#0F172A">Alice Dupont</text>
+      <text x="0" y="45" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#334155">12 Rue de Rivoli</text>
+      <text x="0" y="59" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#334155">75004 Paris, France</text>
+
+      <text x="210" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#64748B">LIVRAISON :</text>
+      <rect x="210" y="20" width="125" height="22" rx="4" fill="#F1F5F9" />
+      <text x="272" y="35" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#0F172A">Colissimo Standard</text>
+      <text x="210" y="58" font-family="-apple-system, sans-serif" font-size="9" fill="#64748B">Poids estimé: 480 g</text>
+    </g>
+
+    <line x1="20" y1="146" x2="360" y2="146" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Scannable Barcode (High-contrast thermal ready) -->
+    <g transform="translate(90, 160)">
+      <rect x="0" y="0" width="4" height="42" fill="#0F172A" />
+      <rect x="7" y="0" width="2" height="42" fill="#0F172A" />
+      <rect x="12" y="0" width="6" height="42" fill="#0F172A" />
+      <rect x="22" y="0" width="3" height="42" fill="#0F172A" />
+      <rect x="28" y="0" width="8" height="42" fill="#0F172A" />
+      <rect x="39" y="0" width="2" height="42" fill="#0F172A" />
+      <rect x="45" y="0" width="5" height="42" fill="#0F172A" />
+      <rect x="54" y="0" width="3" height="42" fill="#0F172A" />
+      <rect x="60" y="0" width="7" height="42" fill="#0F172A" />
+      <rect x="70" y="0" width="2" height="42" fill="#0F172A" />
+      <rect x="76" y="0" width="5" height="42" fill="#0F172A" />
+      <rect x="85" y="0" width="7" height="42" fill="#0F172A" />
+      <rect x="96" y="0" width="3" height="42" fill="#0F172A" />
+      <rect x="103" y="0" width="6" height="42" fill="#0F172A" />
+      <rect x="113" y="0" width="2" height="42" fill="#0F172A" />
+      <rect x="118" y="0" width="7" height="42" fill="#0F172A" />
+      <rect x="129" y="0" width="4" height="42" fill="#0F172A" />
+      <rect x="137" y="0" width="2" height="42" fill="#0F172A" />
+      <rect x="143" y="0" width="6" height="42" fill="#0F172A" />
+      <rect x="153" y="0" width="3" height="42" fill="#0F172A" />
+      <rect x="160" y="0" width="8" height="42" fill="#0F172A" />
+      <rect x="172" y="0" width="4" height="42" fill="#0F172A" />
+      <rect x="180" y="0" width="3" height="42" fill="#0F172A" />
+      <rect x="187" y="0" width="7" height="42" fill="#0F172A" />
+      <rect x="198" y="0" width="2" height="42" fill="#0F172A" />
+    </g>
+    <text x="190" y="216" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700" fill="#0F172A">* SH-1001-COLISSIMO *</text>
+
+    <!-- Items Table Header -->
+    <g transform="translate(20, 230)">
+      <rect x="0" y="0" width="340" height="24" fill="#0F172A" rx="4" />
+      <text x="10" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">ARTICLE / DESCRIPTION</text>
+      <text x="210" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">SKU</text>
+      <text x="310" y="16" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">QTÉ</text>
+
+      <!-- Item Row 1 (from DEMO_ORDERS) -->
+      <g transform="translate(0, 32)">
+        <text x="10" y="14" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Pack T-Shirts Coton Bio</text>
+        <text x="10" y="28" font-family="-apple-system, sans-serif" font-size="9" fill="#64748B">Variante: Noir / Taille M</text>
+        <text x="210" y="20" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#475467">TSH-BLK-M</text>
+        <text x="310" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#0F172A">x3</text>
+        <line x1="0" y1="36" x2="340" y2="36" stroke="#E2E8F0" stroke-width="1" />
+      </g>
+
+      <!-- Item Row 2 -->
+      <g transform="translate(0, 74)">
+        <text x="10" y="14" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Tasse Céramique Artisanale</text>
+        <text x="10" y="28" font-family="-apple-system, sans-serif" font-size="9" fill="#64748B">Variante: Blanc Mat</text>
+        <text x="210" y="20" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#475467">MUG-WHT-01</text>
+        <text x="310" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#0F172A">x1</text>
+        <line x1="0" y1="36" x2="340" y2="36" stroke="#E2E8F0" stroke-width="1" />
+      </g>
+    </g>
+
+    <!-- Notes & Instructions -->
+    <g transform="translate(20, 360)">
+      <rect x="0" y="0" width="340" height="42" rx="4" fill="#F8FAFC" stroke="#E2E8F0" />
+      <text x="10" y="16" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#64748B">INSTRUCTION CLIENT :</text>
+      <text x="10" y="30" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#0F172A">« Sonner à l'interphone Bâtiment B svp »</text>
+    </g>
+
+    <!-- Slip Footer -->
+    <text x="190" y="430" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#15803D">✓ IMPRESSION THERMIQUE DIRECTE 4×6" (203 DPI)</text>
+    <text x="190" y="445" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="8.5" fill="#94A3B8">Zebra · MUNBYN · Rollo · Shopify Fulfillment API</text>
+  </g>
+</svg>

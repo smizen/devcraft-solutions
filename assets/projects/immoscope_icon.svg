@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  <!-- Stylized home + scanner target -->
+  <path d="M140 280L256 180L372 280V370C372 376.627 366.627 382 360 382H152C145.373 382 140 376.627 140 370V280Z" stroke="#38BDF8" stroke-width="24" stroke-linejoin="round" fill="none"/>
+  <path d="M220 382V290H292V382" stroke="#38BDF8" stroke-width="24" stroke-linejoin="round" fill="none"/>
+  <!-- Scope Reticle & Check badge -->
+  <circle cx="340" cy="180" r="48" fill="#10B981"/>
+  <path d="M325 180L335 190L355 170" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
